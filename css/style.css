@@ -4,6 +4,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@keyframes blink {
+  100%{
+    color: red; /* Initial color */
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -61,6 +67,75 @@ a {
   font-weight: 700;
 }
 
+
+.home-container{
+  position: relative;
+}
+#hero-image{
+  width: 100%;
+  height: 100%;
+  padding-top: 5px;
+  position:relative
+}
+#bisleri-image{
+  height: 60%;
+  width: 40%;
+  top: 38%;
+  left: 56%;
+  position: absolute;
+}
+#text-above-bisleri-image{
+  
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size:2.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  top: 93%;
+  left: 33%;
+  animation: blink 250ms infinite; /* 2s duration, infinite loop */
+}
+
+#order-on-call-button{
+  position: absolute;
+  top: 26%;
+  left: 59.5%;
+  box-sizing: border-box;
+  width: 12vw;
+  height: 3.6vw;;
+  flex-shrink: 0;
+  border-radius: 42.5px;
+  border: 2px solid #000;
+  background: rgba(0, 137, 22, 0.00);
+  /*Typography*/
+  color: #000;
+  font-family: Roboto;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#order-on-whatsapp-button{
+  position: absolute;
+  top: 26%;
+  left: 76.5%;
+  box-sizing: border-box;
+  width: 12vw;
+  height: 3.6vw;
+  flex-shrink: 0;
+  border-radius: 42.5px;
+  border: none;
+  background: #008916;
+  /*Typography*/
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 /* Media query for screens smaller than *800px */
 @media screen and (max-width: 800px) {
   .logo {
@@ -81,20 +156,39 @@ a {
     font-size: 12px;
     margin-right: 0px;
   }
-}
-.home-container{
-  position: relative;
-}
-#hero-image{
-width: 100%;
-height: 100%;
-padding-top: 5px;
-position:relative
-}
-#bisleri-image{
-  height: 60%;
-  width: 40%;
-  top: 38%;
-  left: 56%;
-  position: absolute;
+  #hero-image{
+    display: none;
+  }
+  #bisleri-image{
+    height: 149px;
+    width: 231px;
+    top: 42%;
+    left: auto;
+  }
+  .home-container{
+    position: relative;
+    width:100%;
+    height: 237px;
+    display: flex;
+    justify-content: center;
+  }
+  #text-above-bisleri-image{
+    left: 30%;
+    top:100%;
+    font-size: 3vw;
+  }
+  #order-on-whatsapp-button{
+    top: 25%;
+    left: 52%;
+    height: 35.476px;
+    width:25vw;
+    font-size: 2vw;
+  }
+  #order-on-call-button{
+    top: 25%;
+    left: 17%;
+    height: 35.476px;
+    width:25vw;
+    font-size: 2vw;
+  }
 }
