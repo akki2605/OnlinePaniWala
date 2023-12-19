@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- roboto google font -->    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Online Pani Wala</title>
   </head>
   <body>
@@ -21,7 +21,7 @@
       <!-- Navigation Content and Button -->
       <div id="nav-content">
         <!-- Need to connect this button to the form -->
-        <button class="enquire-button" type="button">Enquire now !!!</button>
+        <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now !!!</button>
         <div id="nav-contact">
           <img src="image/phone.png" alt="phone" />
           <p>
@@ -51,7 +51,7 @@
       <section id="catalog">
         <h2>Product Catalog</h2>
         <p>Add all the services here</p>
-        <!-- Additional Product Catalog Content Goes Here -->
+        <!-- Additional Product Catalog Content Goes Here  -->
       </section>
 
       <section id="about">
@@ -76,7 +76,7 @@
       </section>
       <!-- Repeat similar sections for Services, Pricing, Order, FAQs, and Contact -->
 
-      <form>
+      <form id="lead-form">
         Enquire form
         <button>submit</button>
       </form>
