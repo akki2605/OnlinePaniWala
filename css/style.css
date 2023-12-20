@@ -55,16 +55,36 @@ a {
 
 /* Button styles */
 .enquire-button {
-  width: 120px;
-  height: 45px;
-  border-radius: 25px;
-  background: #f00;
+  background-color: #f00;;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  display: inline-block;
   margin-right: 20px; /* Adjust the margin as needed */
   /*Typography */
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 900;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.enquire-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* Apply cursor: pointer on devices that support hover interactions */
+@media (hover: hover){
+  .enquire-button {
+    cursor: pointer;
+  }
 }
 
 
@@ -152,8 +172,6 @@ a {
   }
 
   .enquire-button {
-    width: 100px;
-    font-size: 12px;
     margin-right: 0px;
   }
   #hero-image{
