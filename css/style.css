@@ -156,6 +156,38 @@ a {
   font-weight: 700;
   line-height: normal;
 }
+
+/*Our Services styling starts from here*/
+#services{
+  padding-top: 30px;
+}
+#services h2{
+  padding: 2vw 0vw 0vw 1vw;
+  margin: 0px;
+  /*Typography*/
+  color: #1072BA;
+  font-family: Khula;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.our_services{
+  padding-left: 2vw;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.lists{
+  margin: 0px;
+  padding-left: 2vw;
+  width: 100%;
+  height: 10vw;
+  font-size: 1.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* Media query for screens smaller than *800px */
 @media screen and (max-width: 800px) {
   .logo {
@@ -209,4 +241,18 @@ a {
     width:25vw;
     font-size: 2vw;
   }
+  #services h2{
+    font-size: 5vw;
+    padding-bottom:3px ;
+  }
+  .our_services{
+    display:block;
+  }
+  .lists{
+    padding-left: 4vw;
+    font-size: 3vw;
+    height: 18vw;
+    justify-content: space-around;
+  }
+  
 }
