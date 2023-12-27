@@ -2,10 +2,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+/* Hide scrollbar for Chrome and Safire*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
 section{
-  margin-left: 15px;
+  margin: 0px 50px 0px 50px; 
 }
+
 @keyframes blink {
   100%{
     color: red; /* Initial color */
@@ -16,6 +27,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 /*for all section headings*/
 h2{
   margin-bottom: 10px;
@@ -29,7 +41,7 @@ h2{
 }
 /* Basic styling for logo */
 .logo {
-  margin-left: 10px;
+  margin-left: 50px;
   color: #1072ba;
   font-size: 36px;
   font-weight: bold;
@@ -52,7 +64,7 @@ h2{
 #nav-content {
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 /* Styles for nav-contact */
@@ -79,7 +91,7 @@ h2{
   font-size: 15px;
   font-weight: 900;
   padding: 0 18px;
-  line-height: 50px;
+  line-height: 40px;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -92,6 +104,9 @@ h2{
   transform: translate(2px, 2px);
 }
 
+#home{
+  margin: 0px;
+}
 
 .home-container{
   position: relative;
@@ -109,6 +124,7 @@ h2{
   left: 56%;
   position: absolute;
 }
+
 #text-above-bisleri-image{
   margin: 0px;
   color: #000;
@@ -162,17 +178,13 @@ h2{
 
 /*Our Services styling starts from here*/
 .our_services{
-  padding-left: 2vw;
   margin: 0px;
   display: flex;
   justify-content: space-between;
 }
 .lists{
   margin: 0px;
-  padding-left: 2vw;
-  width: 100%;
-  height: 10vw;
-  font-size: 1.8vw;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -182,12 +194,11 @@ h2{
   display: flex;
 }
 #About-us-text{
-  font-size: 25px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 35px;
   text-align: justify;
-  padding: 0px 24px;
+  padding-left: 24px;
   margin: 0px;
-  font-family: 'Roboto';
 }
 #about-us-img{
   width: 393px;
@@ -198,13 +209,24 @@ h2{
 
 /* Media query for screens smaller than *800px */
 @media screen and (max-width: 800px) {
+  section{
+  margin: 0px 10px 0px 10px; 
+}
+  #home{
+    margin: 0px;
+  }
+
   .logo {
+    margin-left: 10px;
     font-size: 24px; /* Adjust font size for smaller screens */
   }
 
   #nav-bar {
-    padding: 5px; /* Adjust padding for better spacing on smaller screens */
+    padding: 5px 0px 5px 5px; /* Adjust padding for better spacing on smaller screens */
     height: auto;
+  }
+  #nav-content {
+    margin-right: 30px;
   }
 
   #nav-contact {
@@ -212,11 +234,14 @@ h2{
   }
 
   .enquire-button {
+    line-height: 40px;
     margin-right: 0px;
   }
+
   #hero-image{
     display: none;
   }
+
   #bisleri-image{
     height: 149px;
     width: 231px;
