@@ -129,7 +129,7 @@ h2{
   position: absolute;
 }
 
-#text-above-bisleri-image{
+#text-currently-serving{
   margin: 0px;
   color: #000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -139,6 +139,20 @@ h2{
   line-height: normal;
   text-align: center;
   animation: blink 250ms infinite; /* 2s duration, infinite loop */
+}
+
+#tag-line{
+  position: absolute;
+    top: 0%;
+    right: 3%;
+    /*Typography*/
+    color: #494949;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Nunito Sans;
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
 }
 
 #order-on-call-button{
@@ -315,36 +329,44 @@ h2{
   }
 
   #bisleri-image{
-    height: 149px;
-    width: 231px;
-    top: 42%;
+    height: 164px;
+    width: 268px;
+    top: 54%;
     left: auto;
   }
   .home-container{
     position: relative;
     width:100%;
-    height: 237px;
+    height: 355px;
     display: flex;
     justify-content: center;
+    background-color: rgb(249 248 244);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
   }
-  #text-above-bisleri-image{
-    left: 30%;
-    top:100%;
-    font-size: 3vw;
+  #text-currently-serving{
+    margin-top: 10px;
+    font-size: 4vw;
   }
+  
   #order-on-whatsapp-button{
-    top: 25%;
-    left: 52%;
+    top: 39%;
+    left: 54%;
     height: 35.476px;
     width:25vw;
     font-size: 2vw;
   }
   #order-on-call-button{
-    top: 25%;
-    left: 17%;
+    top: 39%;
+    left: 15%;
     height: 35.476px;
     width:25vw;
     font-size: 2vw;
+  }
+  #tag-line{
+    position: absolute;
+    top: 9%;
+    right: auto;
+    font-size: 20px;
   }
   h2{
     font-size:24px;
@@ -396,10 +418,37 @@ h2{
 }
 /* Apply cursor: pointer on devices that support hover interactions */
 @media (hover: hover){
-  .enquire-button {
+  .enquire-button,#order-on-whatsapp-button,#order-on-call-button,.faq-question{
     cursor: pointer;
   }
-  .faq-question{
-    cursor: pointer;
+}
+@media screen and (min-width: 1600px){
+  #order-on-whatsapp-button{
+    font-size: 16px;
+    height: 57.6px;
+    width: 192px;
+  }
+  #order-on-call-button{
+    font-size: 16px;
+    height: 57.6px;
+    width: 192px;
+  }
+  #tag-line{
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1600px){
+  #order-on-whatsapp-button{
+    font-size: 16px;
+    height: 57.6px;
+    width: 192px;
+  }
+  #order-on-call-button{
+    font-size: 16px;
+    height: 57.6px;
+    width: 192px;
+  }
+  #tag-line{
+    font-size: 40px;
   }
 }
