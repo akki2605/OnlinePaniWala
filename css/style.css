@@ -398,7 +398,17 @@ h2{
     height: auto;
     border-radius: 25px;
   }
+ 
+}
+/* Apply cursor: pointer on devices that support hover interactions */
+@media (hover: hover){
+  .enquire-button,#order-on-whatsapp-button,#order-on-call-button,.faq-question{
+    cursor: pointer;
+  }
+}
 
+@media screen and (max-width:1100px) {
+  
   #faq {
     overflow: hidden;
   }
@@ -414,29 +424,8 @@ h2{
     background-image: url("../image/water_delivery.jpg");
     background-size: cover;
   }
- 
 }
-/* Apply cursor: pointer on devices that support hover interactions */
-@media (hover: hover){
-  .enquire-button,#order-on-whatsapp-button,#order-on-call-button,.faq-question{
-    cursor: pointer;
-  }
-}
-@media screen and (min-width: 1600px){
-  #order-on-whatsapp-button{
-    font-size: 16px;
-    height: 57.6px;
-    width: 192px;
-  }
-  #order-on-call-button{
-    font-size: 16px;
-    height: 57.6px;
-    width: 192px;
-  }
-  #tag-line{
-    font-size: 40px;
-  }
-}
+
 @media screen and (min-width: 1600px){
   #order-on-whatsapp-button{
     font-size: 16px;
