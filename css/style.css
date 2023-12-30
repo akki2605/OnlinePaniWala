@@ -226,8 +226,75 @@ h2{
 
 }
 
+#faq {
+  overflow: hidden;
+}
+
+.faq-container {
+  position: relative;
+  margin: 25px 10px 0px 10px;
+}
+
+.fab-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faq-item {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 5px rgba(16, 114, 186, 0.15);
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.faq-question {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+  position: relative;
+}
+
+.faq-question::after {
+  content: '\25B6';
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+.faq-item.expanded .faq-question::after {
+  transform: rotate(90deg); /* Rotate the arrow for the expanded state */
+}
+
+.faq-answer {
+  font-style: italic;
+  background-color: rgb(242, 242, 242);
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Add transition for max-height */
+}
+
+.faq-item.expanded .faq-answer {
+  padding: 10px;
+  max-height: 10px; /* Adjust this value based on your content */
+}
+
+#faq-container-img {
+  width: 600px;
+  height: 505px;
+}
+
+#faq-credit{
+  position: absolute;
+  right: 100px;
+  color: rgb(234, 234, 234);
+}
+
 /* Media query for screens smaller than *800px */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
   section{
   margin: 0px 10px 0px 10px; 
 }
@@ -331,11 +398,43 @@ h2{
     height: auto;
     border-radius: 25px;
   }
+
+  #faq {
+    overflow: hidden;
+  }
+  .faq-item {
+    max-width: none;
+  }
+
+  #faq-container-img {
+   display: none;
+  }
+
+  .faq-container {
+    background-image: url("../image/water_delivery.jpg");
+    background-size: cover;
+  }
+ 
 }
 /* Apply cursor: pointer on devices that support hover interactions */
 @media (hover: hover){
-  .enquire-button,#order-on-whatsapp-button,#order-on-call-button{
+  .enquire-button,#order-on-whatsapp-button,#order-on-call-button,.faq-question{
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 1600px){
+  #order-on-whatsapp-button{
+    font-size: 16px;
+    height: 57.6px;
+    width: 192px;
+  }
+  #order-on-call-button{
+    font-size: 16px;
+    height: 57.6px;
+    width: 192px;
+  }
+  #tag-line{
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 1600px){
