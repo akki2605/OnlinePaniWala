@@ -8,7 +8,6 @@ This website provides information about our water delivery services, products, a
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [License](#license)
 
 ## Description
 
@@ -33,7 +32,3 @@ Explore the different sections of the website to discover the benefits of our wa
 ## Screenshots
 
 ![image](https://github.com/akki2605/OnlinePaniWala/assets/101251454/0e689ec5-6895-4085-8eac-8abd21df6361)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
