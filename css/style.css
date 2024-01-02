@@ -325,6 +325,56 @@ h2{
   font-weight: 700;
   line-height: normal;
 }
+.contact-container{
+  display: flex;
+}
+.contact-description-text{
+  width: 625px;
+  height: auto;
+  /* Typography */
+  color: #000;
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 76%;
+}
+.ways-to-contact h6{
+  width: 173px;
+  height: 22px;
+  margin: 0px;
+  /* Typography */
+  color: #C4C4C4;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+.ways-to-contact p{
+  width: 244px;
+  height: 38px;
+  /* Typography */
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+#lead-form{
+  width: 548px;
+  height: auto;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 5px rgba(16, 114, 186, 0.15);
+}
 /* Media query for screens smaller than *800px */
 @media screen and (max-width: 840px) {
   section{
@@ -432,7 +482,7 @@ h2{
   }
  
   .usp-item{
-    width: 172px;
+    width: 160px;
     height: 118px;
   }
 }
@@ -459,6 +509,17 @@ h2{
   .faq-container {
     background-image: url("../image/water_delivery.jpg");
     background-size: cover;
+  }
+  .contact-description-text{
+    width: 95%;
+  }
+  .contact-container{
+    flex-direction: column; 
+  }
+  .contact-details{
+    width: 70%;
+    margin-left: 20px;
+    justify-content: unset;
   }
 }
 
