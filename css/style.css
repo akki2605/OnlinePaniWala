@@ -362,11 +362,6 @@ h2{
   margin-left: 12px;
 }
 
-@media screen and (max-width: 510px) {
-  .product-item{
-    justify-self: normal;
-  }
-}
 /* Media query for screens smaller than *800px */
 @media screen and (max-width: 840px) {
   section{
@@ -475,7 +470,7 @@ h2{
 
   .product-container{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
   }
  
   .usp-item{
