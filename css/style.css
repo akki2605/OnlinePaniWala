@@ -48,7 +48,8 @@ h2{
   margin-left: 50px;
   color: #1072ba;
   font-size: 36px;
-  font-weight: bold;
+  font-style: italic;
+  font-weight: 700;
 }
 
 /* Header styles */
