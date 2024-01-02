@@ -53,6 +53,8 @@ h2{
 
 /* Header styles */
 #nav-bar {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between; /* This will push the logo to the left and nav-content to the right */
   align-items: center;
@@ -377,7 +379,7 @@ h2{
   }
 
   #nav-bar {
-    padding: 5px 0px 5px 5px; /* Adjust padding for better spacing on smaller screens */
+    padding: 10px 0; /* Adjust padding for better spacing on smaller screens */
     height: auto;
   }
   #nav-content {
@@ -454,7 +456,7 @@ h2{
     flex-direction: column;
   }
   #About-us-text{
-    padding: 5px 25px 5px 5px;
+    padding: 5px;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
