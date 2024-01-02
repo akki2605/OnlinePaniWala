@@ -288,8 +288,9 @@ h2{
 }
 
 #faq-credit{
-  position: absolute;
-  right: 100px;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: right;
   color: rgb(234, 234, 234);
 }
 
