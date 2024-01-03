@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- roboto google font -->    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Online Pani Wala</title>
+    <title>Online पानी वाला</title>
   </head>
   <body>
     <header id="nav-bar">
       <!-- Logo -->
-      <div class="logo">Online Pani Wala</div>
+      <div class="logo">Online पानी वाला</div>
 
       <!-- Navigation Content and Button -->
       <div id="nav-content">
@@ -39,8 +39,8 @@
           <img src="image/hero_image.png" alt="Hero image" id="hero-image">
           <img src="image/bisleri.png" alt="bisleri image" id="bisleri-image">   
           <p id="tag-line">Hydration Redefined: Delivering Pure<br>Refreshment to Your Doorstep.</p>       
-          <button id="order-on-call-button">ORDER ON CALL</button>
-          <button id="order-on-whatsapp-button">ORDER ON WHATSAPP</button>
+          <a href="tel:8810232347"><button id="order-on-call-button">ORDER ON CALL</button></a>
+          <a href="https://wa.me/918810232347?text=Hello!%20%0AI'm%20exploring%20water%20delivery%20options.%20Could%20you%20share%20some%20details%20about%20your%20company%C2%A0and%C2%A0offerings%3F" target="_blank"><button id="order-on-whatsapp-button">ORDER ON WHATSAPP</button></a>
         </div>
         <p id="text-currently-serving">Currently serving noida only!!!</p>
       </section>
@@ -65,7 +65,50 @@
 
       <section id="catalog">
         <h2>Product Catalog</h2>
-        <p>Add all the services here</p>
+        <div class="product-container">
+          <div class="product-item">
+            <img class="product-img" style="left: 20%;" src="./image/product_img/20-ltr-drinking-water-jar.png">
+            <p class="product-desc">Natural Water Can <br>20 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <img class="product-img" style="left: 17%;" src="./image/product_img/18-ltr-campher 1.png">
+            <p class="product-desc"> Natural Camper  <br>18 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <img class="product-img" src="./image/product_img/bislary-20lit.png">
+            <p class="product-desc">Bisleri Water Can <br>20 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <img class="product-img" src="./image/product_img/bislary-5-lit.png">
+            <p class="product-desc">Bisleri Water Can <br>5 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <img class="product-img" style="left:15%; bottom: 60%;" src="./image/product_img/bislary-300-ml.png">
+            <p class="product-desc">Bisleri Water Bottle <br>300ml</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <img class="product-img" src="./image/product_img/bislary-500-ml.png">
+            <p class="product-desc">Bisleri Water Bottle <br>500 ml</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <img class="product-img" src="./image/product_img/bislary-1-lit.png">
+            <p class="product-desc">Bisleri Water Bottle <br>1 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <img class="product-img" src="./image/product_img/bislary-1-lit.png">
+            <p class="product-desc">Bisleri Water Bottle <br>2 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          
+
+        </div>
         <!-- Additional Product Catalog Content Goes Here  -->
       </section>
 
