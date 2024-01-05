@@ -463,6 +463,9 @@ input,textarea[placeholder]{
 }
 
 /* Footer style */
+footer{
+  margin-top: 20px;
+}
 .sf{
   max-width: 1600px;
   height: auto;
@@ -472,6 +475,7 @@ input,textarea[placeholder]{
 }
 .row-1{
   display: flex;
+  justify-content: space-between;
   gap: 50px;
 }
 
