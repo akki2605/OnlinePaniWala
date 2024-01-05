@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
 html{
   max-width: 1600px;
   margin: 0 auto;
@@ -460,6 +462,73 @@ input,textarea[placeholder]{
   margin-left: 12px;
 }
 
+/* Footer style */
+.sf{
+  max-width: 1600px;
+  height: auto;
+  background-color: #000;
+  color: white;
+  padding: 25px 50px;
+}
+.row-1{
+  display: flex;
+  gap: 50px;
+}
+
+#col-1 a {
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+#col-1 ,#col-2-text{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#col-1{
+  max-width: 33%;
+  text-align: justify;
+}
+
+#col-2-heading{
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+
+#col-3 p{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.row-2{
+  margin-top: 10%;
+  text-align: center;
+}
+
+.sf-list{
+  list-style-type: none;
+}
+
+.sf-list-items{
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+  .row-1{
+    display: block;
+  }
+  #col-1 {
+    max-width: fit-content !important;
+  }
+}
 /* Media query for screens smaller than *800px */
 @media screen and (max-width: 840px) {
   section{
@@ -572,8 +641,28 @@ input,textarea[placeholder]{
   }
  
   .usp-item{
-    width: 160px;
+    width: 172px;
     height: 118px;
+  }
+  
+  .sf{
+    padding: 25px 15px;
+  }
+
+  .row-1{
+    justify-content: space-between;
+  }
+  
+  #col-1{
+    max-width: 60%;
+  }
+
+  #col-2 , .sf-list{
+    display: none;
+  }
+
+  #col-3 p{
+    font-size: 20px;
   }
   
 }
