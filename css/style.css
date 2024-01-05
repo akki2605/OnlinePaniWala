@@ -333,6 +333,8 @@ h2{
   display: flex;
 }
 .contact-description-text{
+  box-sizing: border-box;
+  margin-right: 20px;
   width: 625px;
   height: auto;
   /* Typography */
@@ -375,10 +377,53 @@ h2{
 #lead-form{
   width: 548px;
   height: auto;
+  padding: 20px;
   border-radius: 25px;
   background: #FFF;
   box-shadow: 0px 0px 4px 5px rgba(16, 114, 186, 0.15);
 }
+#form-title{
+  margin:0px 0px 10px 0px;
+  text-align: center;
+  /* Typography */
+  color: #1072BA;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+input[type=text]{
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 10px 20px;
+  width: 40%;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+textarea{
+  margin-left: 20px;
+  width: 90%;
+  height: auto;
+  border-radius: 2px;
+}
+input,textarea[placeholder]{
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+#form-button{
+  width: 200px;
+  height: 57px;
+  margin-left: 20px;
+  border-radius: 34.5px;
+  border: 3px solid #3AC12F;
+  background: rgba(255, 255, 255, 0.00);
+}
+
+
 .product-container{
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
@@ -530,6 +575,7 @@ h2{
     width: 160px;
     height: 118px;
   }
+  
 }
 /* Apply cursor: pointer on devices that support hover interactions */
 @media (hover: hover){
@@ -565,6 +611,12 @@ h2{
     width: 70%;
     margin-left: 20px;
     justify-content: unset;
+  }
+  #lead-form{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 10px;
   }
 }
 
