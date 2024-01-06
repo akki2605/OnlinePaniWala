@@ -1,4 +1,7 @@
+/* Nunito Sans google font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+/* roboto google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html{
   max-width: 1600px;
@@ -89,9 +92,9 @@ h2{
 /* Button styles */
 .enquire-button {
   background-color: #f00;;
-  border: 2px solid #422800;
+  border: 2px solid #000000;
   border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
+  box-shadow: #000000 4px 4px 0 0;
   display: inline-block;
   margin-right: 20px; /* Adjust the margin as needed */
   /*Typography */
@@ -109,7 +112,7 @@ h2{
 }
 
 .enquire-button:active {
-  box-shadow: #422800 2px 2px 0 0;
+  box-shadow: #000000 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
@@ -331,6 +334,109 @@ h2{
   font-weight: 700;
   line-height: normal;
 }
+.contact-container{
+  display: flex;
+}
+.contact-description-text{
+  box-sizing: border-box;
+  margin-right: 20px;
+  width: 625px;
+  height: auto;
+  /* Typography */
+  color: #000;
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 76%;
+}
+.ways-to-contact h6{
+  width: 173px;
+  height: 22px;
+  margin: 0px;
+  /* Typography */
+  color: #C4C4C4;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+.ways-to-contact p{
+  width: 244px;
+  height: 38px;
+  /* Typography */
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+#lead-form{
+  width: 548px;
+  height: auto;
+  padding: 20px;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 5px rgba(16, 114, 186, 0.15);
+}
+
+/* form css style */
+#form-title{
+  margin:0px 0px 10px 0px;
+  text-align: center;
+  /* Typography */
+  color: #1072BA;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+input[type=text]{
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 10px 20px;
+  width: 40%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+textarea{
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 90%;
+  height: 60px;
+  border-radius: 2px;
+}
+
+input::placeholder,textarea::placeholder {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0.7;
+  color:#C4C4C4;
+}
+
+#form-button{
+  width: 200px;
+  height: 57px;
+  margin-left: 20px;
+  margin-top: 15px;
+  border-radius: 35px;
+  border: 3px solid #3AC12F;
+  background: rgba(255, 255, 255, 0.00);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
 .product-container{
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
@@ -368,6 +474,9 @@ h2{
 }
 
 /* Footer style */
+footer{
+  margin-top: 20px;
+}
 .sf{
   max-width: 1600px;
   height: auto;
@@ -377,6 +486,7 @@ h2{
 }
 .row-1{
   display: flex;
+  justify-content: space-between;
   gap: 50px;
 }
 
@@ -432,6 +542,10 @@ h2{
   }
   #col-1 {
     max-width: fit-content !important;
+  }
+
+  input[type=text]{
+    width: 90%;
   }
 }
 /* Media query for screens smaller than *800px */
@@ -594,6 +708,23 @@ h2{
   .faq-container {
     background-image: url("../image/water_delivery.jpg");
     background-size: cover;
+  }
+  .contact-description-text{
+    width: 95%;
+  }
+  .contact-container{
+    flex-direction: column; 
+  }
+  .contact-details{
+    width: 70%;
+    margin-left: 20px;
+    justify-content: unset;
+  }
+  #lead-form{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 10px;
   }
 }
 

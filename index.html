@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- roboto google font -->    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Online पानी वाला</title>
   </head>
   <body>
@@ -126,7 +125,7 @@
           <div class="faq-container">
             <div class="faq-item">
               <div class="faq-question" onclick="toggleAnswer(this)">Q: How quickly can I expect my water delivery after placing an order?</div>
-              <div class="faq-answer"><b>A:</b> We strive for prompt service, and you can expect your water to be delivered on the same day as your order.</div>
+              <div class="faq-answer"><b>A:</b> We strive for prompt service, and you can expect your water to be delivered within 30 minutes your order.</div>
             </div>
           
             <div class="faq-item">
@@ -192,15 +191,39 @@
 
       <section id="contact">
         <h2>Contact Us</h2>
-        <p>Add your Details here</p>
-        <!-- Additional FAQs Content Goes Here -->
-      </section>
-      <!-- Repeat similar sections for Services, Pricing, Order, FAQs, and Contact -->
-
-      <form id="lead-form">
-        Enquire form
-        <button>submit</button>
-      </form>
+        <div class="contact-container">
+          <div class="contact-description-item">
+            <p class="contact-description-text">Feel free to reach out to us for any inquiries or assistance. Our team at <b>Online पानी वाला</b> is dedicated to ensuring your satisfaction and addressing your water-related needs promptly. We look forward to hearing from you!</p>
+            <div class="contact-details">
+                <div class="ways-to-contact">
+                  <h6>Phone</h6>
+                  <p><a href="tel:8810232347">+91 8810232347</a></p>
+                </div>
+                <div class="ways-to-contact">
+                  <h6>Email</h6>
+                  <p><a href="mailto:naturaldwater@gmail.com">naturaldwater@gmail.com</a></p>
+                </div>
+                <div class="ways-to-contact">
+                  <h6>Delivery Timings</h6>
+                  <p>We offer seamless 24/7 water delivery</p>
+                </div>
+                <div class="ways-to-contact">
+                  <h6>Address</h6>
+                  <p>Golden nest B Block, Sector 62, Noida, Uttar Pradesh 201301</p>
+                </div>
+            </div>
+          </div>
+          <div id="lead-form">
+            <p id="form-title">Enquire Now</p>
+            <form action="mailto:khukhutri0802@gmail.com" method="post">
+                <input type="text" placeholder="Full Name*" required>
+                <input type="text" placeholder="Phone Number*" required>
+              <input type="text" placeholder="City*" style="width: 90%;" required><br>
+              <textarea name="msg" id="msg" placeholder="Enter your message*" required></textarea>
+              <input type="submit" value="Contact Us" id="form-button">
+            </form>
+          </div>
+        </div>
     </main>
 
     <footer>
