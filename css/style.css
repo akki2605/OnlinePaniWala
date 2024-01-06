@@ -92,9 +92,9 @@ h2{
 /* Button styles */
 .enquire-button {
   background-color: #f00;;
-  border: 2px solid #422800;
+  border: 2px solid #000000;
   border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
+  box-shadow: #000000 4px 4px 0 0;
   display: inline-block;
   margin-right: 20px; /* Adjust the margin as needed */
   /*Typography */
@@ -112,7 +112,7 @@ h2{
 }
 
 .enquire-button:active {
-  box-shadow: #422800 2px 2px 0 0;
+  box-shadow: #000000 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
