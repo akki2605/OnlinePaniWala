@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" alt="Favicon" />
 
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- roboto google font -->    
+    
     <title>Online पानी वाला</title>
   </head>
   <body>
@@ -265,13 +262,17 @@
           </div>
           <div id="lead-form">
             <p id="form-title">Enquire Now</p>
-            <form action="mailto:khukhutri0802@gmail.com" method="post">
-                <input type="text" placeholder="Full Name*" required>
-                <input type="text" placeholder="Phone Number*" required>
-              <input type="text" placeholder="City*" style="width: 90%;" required><br>
-              <textarea name="msg" id="msg" placeholder="Enter your message*" required></textarea>
-              <input type="submit" value="Contact Us" id="form-button">
+            <form id="enquire-form" action="https://script.google.com/macros/s/AKfycbzOtavqGP7xfM8aK0SQeEkie1nIGFr3v0ll0O2DEFEsL3AHpAi0On4VM6RjN7cox8ka/exec" method="post">
+                <input name="fullname" type="text" placeholder="Full Name*" required>
+                <input name="phone" type="text" placeholder="Phone Number*" required>
+                <input name="city" type="text" placeholder="City*" style="width: 90%;" required><br>
+                <textarea name="msg" id="msg" placeholder="Enter your message*" required></textarea>
+                <input type="submit" value="Contact Us" id="form-button">
             </form>
+          </div>
+          <div id="lead-form-submitted">
+            <p id="lead-form-thank-you" style="color: green;">Thank you!<br> We have received your response.<br>We will get back to you soon.</p>
+            <button id="closeButton" onclick="closeForm()">✕</button>
           </div>
         </div>
     </main>
