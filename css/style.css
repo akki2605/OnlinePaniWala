@@ -379,15 +379,6 @@ h2{
   font-weight: 400;
   line-height: normal;
   }
-#lead-form{
-  width: 548px;
-  height: auto;
-  padding: 20px;
-  border-radius: 25px;
-  background: #FFF;
-  box-shadow: 0px 0px 4px 5px rgba(16, 114, 186, 0.15);
-}
-
 /* form css style */
 #form-title{
   margin:0px 0px 10px 0px;
@@ -436,6 +427,39 @@ input::placeholder,textarea::placeholder {
   font-weight: 700;
 }
 
+#lead-form,#lead-form-submitted{
+  width: 548px;
+  height: auto;
+  padding: 20px;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 5px rgba(16, 114, 186, 0.15);
+}
+#lead-form-thank-you{
+  text-align: center;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#lead-form-submitted{
+  position: relative;
+  display:none;
+}
+
+#closeButton{
+  all: unset;
+  position: absolute;
+  font-size: 25px;
+  font-weight: 500;
+  top:10px;
+  right: 20px;
+  opacity: 0.5;
+}
+
+#closeButton:hover {
+  opacity: 1;
+}
 
 .product-container{
   display:grid;
@@ -687,7 +711,7 @@ footer{
 }
 /* Apply cursor: pointer on devices that support hover interactions */
 @media (hover: hover){
-  .enquire-button,#order-on-whatsapp-button,#order-on-call-button,.faq-question{
+  .enquire-button,#order-on-whatsapp-button,#order-on-call-button,.faq-question,#form-button,#closeButton{
     cursor: pointer;
   }
 }
