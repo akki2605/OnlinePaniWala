@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" alt="Favicon" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    
     <title>Online पानी वाला</title>
   </head>
   <body>
@@ -268,11 +268,15 @@
           </div>
           <div id="lead-form">
             <p id="form-title">Enquire Now</p>
-            <form id="enquire-form" action="https://script.google.com/macros/s/AKfycbzOtavqGP7xfM8aK0SQeEkie1nIGFr3v0ll0O2DEFEsL3AHpAi0On4VM6RjN7cox8ka/exec" method="post">
-                <input name="fullname" type="text" placeholder="Full Name*" required>
-                <input name="phone" type="text" placeholder="Phone Number*" required>
-                <input name="city" type="text" placeholder="City*" style="width: 90%;" required><br>
-                <textarea name="msg" id="msg" placeholder="Enter your message*" required></textarea>
+            <form id="enquire-form" action=" " method="post">
+                <input id="fullname" name="fullname" type="text" placeholder="Full Name*" required>
+
+                <input id="phone" name="phone" type="text" placeholder="Phone Number*" required>
+
+                <input id="city" name="city" type="text" placeholder="City*" style="width: 90%;" required><br>
+
+                <textarea id="msg" name="msg" placeholder="Enter your message*" required></textarea>
+                
                 <input type="submit" value="Contact Us" id="form-button">
             </form>
           </div>
