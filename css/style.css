@@ -446,7 +446,12 @@ input::placeholder,textarea::placeholder {
   position: relative;
   display:none;
 }
-
+.formerror{
+  font-style: italic;
+  display: none;
+  color: red;
+  margin-left: 20px;
+}
 #closeButton{
   all: unset;
   position: absolute;
