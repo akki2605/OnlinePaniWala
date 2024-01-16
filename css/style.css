@@ -228,7 +228,7 @@ h2{
 }
 #about-us-img{
   width: 393px;
-  height: auto;
+  height: -webkit-fill-available;
   object-fit: cover;
   border-radius: 25px;
 
@@ -334,6 +334,18 @@ h2{
   font-weight: 700;
   line-height: normal;
 }
+
+#embeded_video{
+  margin: 50px 0;
+  text-align: center;
+}
+
+#osmsis_video{
+  width: 560px;
+  height: 315px;
+}
+
+
 .contact-container{
   display: flex;
 }
@@ -379,6 +391,40 @@ h2{
   font-weight: 400;
   line-height: normal;
   }
+#lead-form,#lead-form-submitted{
+  width: 548px;
+  height: auto;
+  padding: 20px;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 5px rgba(16, 114, 186, 0.15);
+}
+#lead-form-thank-you{
+  text-align: center;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#lead-form-submitted{
+  position: relative;
+  display:none;
+}
+
+#closeButton{
+  all: unset;
+  position: absolute;
+  font-size: 25px;
+  font-weight: 500;
+  top:10px;
+  right: 20px;
+  opacity: 0.5;
+}
+
+#closeButton:hover {
+  opacity: 1;
+}
+
 /* form css style */
 #form-title{
   margin:0px 0px 10px 0px;
@@ -575,6 +621,11 @@ footer{
 
   input[type=text]{
     width: 90%;
+  }
+  
+  #osmsis_video{
+    width: 280px;
+    height: 157px;
   }
 }
 /* Media query for screens smaller than *800px */
