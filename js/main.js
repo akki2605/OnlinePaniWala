@@ -53,16 +53,40 @@ $(document).ready(function(){
   
   $(document).on('submit','#enquire-form',function(e){
     e.preventDefault();
+
+    var errors = $('.formerror');
+    errors.each(function() {
+      $(this).text('');
+    });
+
+
+    var fullname= $('#fullname').val().trim();
+    var phone= $('#phone').val().trim();
+    var city= $('#city').val().trim();
     
-    var url="https://docs.google.com/forms/d/e/1FAIpQLSfxLLS1TtOa1jYV96KfPe_btVMDFjjUcYgegLCEq8vtrXl6yw/formResponse?";
+    if((fullname.length<2) || !(/^([a-z]+(-| )?)+$/i).test(fullname)){
+      document.getElementsByClassName('formerror')[0].style.display = 'block';
+      $('.formerror:eq(0)').text('*Please enter name correctly');
+    }
+    else if(!(/^\d{10}$/).test(phone)){
+      document.getElementsByClassName('formerror')[0].style.display = 'block';
+      $('.formerror:eq(0)').text('*Please enter phone number correctly');
+    }
+    else if(!(/^([a-z]+(-| )?)+$/i).test(city)){
+      document.getElementsByClassName('formerror')[1].style.display = 'block';
+      $('.formerror:eq(1)').text('*Please enter city correctly');
+    }
+    else{
+      var url="https://docs.google.com/forms/d/e/1FAIpQLSfxLLS1TtOa1jYV96KfPe_btVMDFjjUcYgegLCEq8vtrXl6yw/formResponse?";
 
-    var form_data=new FormData();
-    form_data.append('entry.1763979098', $('#fullname').val())
-    form_data.append('entry.1982011633', $('#phone').val())
-    form_data.append('entry.164786112', $('#city').val())
-    form_data.append('entry.2073022026', $('#msg').val())
+      var form_data=new FormData();
+      form_data.append('entry.1763979098', fullname)
+      form_data.append('entry.1982011633', phone)
+      form_data.append('entry.164786112', city)
+      form_data.append('entry.2073022026', $('#msg').val())
 
-    formSubmit(url,form_data);
+      formSubmit(url,form_data);
+    }
 
   })  
 })
