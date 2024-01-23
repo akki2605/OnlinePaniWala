@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" alt="Favicon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <title>Online पानी वाला</title>
+  </head>
+  <body>
+    <header id="nav-bar">
+      <!-- Logo -->
+      <div class="logo">Online पानी वाला</div>
+
+      <!-- Navigation Content and Button -->
+      <div id="nav-content">
+        <!-- Need to connect this button to the form -->
+        <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now !!!</button>
+        <div id="nav-contact">
+          <img src="image/phone.png" alt="phone" />
+          <p>
+            <b>Call us now:</b> <a href="tel:8810232347">88102 32347</a> <br />
+            <b>Email: </b> <a href="mailto:naturaldwater@gmail.com">naturaldwater@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Main Content Sections -->
+      <section id="home">
+        <div class="home-container">
+          <picture>
+            <source type="image/webp" srcset="image/webp/hero_image.webp">
+            <img src="image/hero_image.png" alt="Hero image" id="hero-image">
+          </picture>
+          <img src="image/bisleri.png" alt="bisleri image" id="bisleri-image">   
+          <p id="tag-line">Hydration Redefined: Delivering Pure<br>Refreshment to Your Doorstep.</p>       
+          <a href="tel:8810232347"><button id="order-on-call-button">ORDER ON CALL</button></a>
+          <a href="https://wa.me/918810232347?text=Hello!%20%0AI'm%20exploring%20water%20delivery%20options.%20Could%20you%20share%20some%20details%20about%20your%20company%C2%A0and%C2%A0offerings%3F" target="_blank" rel="noopener noreferrer"><button id="order-on-whatsapp-button">ORDER ON WHATSAPP</button></a>
+          <div id="g-profile"><a href="https://g.co/kgs/MKHAVYZ" target="_blank">Google Profile</a></div>
+
+        </div>
+        <p id="text-currently-serving">Currently serving noida only!!!</p>
+      </section>
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="our_services">
+          <ul class="lists">
+            <li>Same-day water delivery for instant hydration</li>
+            <li>Unbeatable market prices ensuring cost-effectiveness</li>
+            <li>Daily TDS checks guarantee</li>
+            <li>24/7 seamless cold water delivery</li>
+          </ul>
+          <ul class="lists">
+            <li>Tailored services for residential and corporate customers</li>
+            <li>All Bisleri products available</li>
+            <li>Transparent pricing inclusive of all delivery charges</li>
+            <li>We accept reservations for all types of events</li>
+          </ul>          
+        </div>
+      </section>
+
+      <section id="catalog">
+        <h2>Product Catalog</h2>
+        <div class="product-container">
+          <div class="product-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/product_img/20-ltr-drinking-water-jar.webp">
+              <img class="product-img" style="left: 20%;" src="./image/product_img/20-ltr-drinking-water-jar.png" alt="20-ltr-drinking-water-jar">
+            </picture>
+            <p class="product-desc">Natural Water Can <br>20 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/product_img/18-ltr-campher.webp">
+              <img class="product-img" style="left: 17%;" src="./image/product_img/18-ltr-campher.png" alt="18-ltr-campher">
+            </picture>
+            <p class="product-desc"> Natural Camper  <br>18 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/product_img/bislary-20lit.webp">
+              <img class="product-img" src="./image/product_img/bislary-20lit.png" alt="bislary-20lit">
+            </picture>
+            <p class="product-desc">Bisleri Water Can <br>20 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/product_img/bislary-5-lit.webp">
+              <img class="product-img" src="./image/product_img/bislary-5-lit.png" alt="bislary-5-lit">
+            </picture>
+            <p class="product-desc">Bisleri Water Can <br>5 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/product_img/bislary-300-ml.webp">
+              <img class="product-img" style="left:15%; bottom: 60%;" src="./image/product_img/bislary-300-ml.png" alt="bislary-300-ml">
+            </picture>
+            <p class="product-desc">Bisleri Water Bottle <br>300ml</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/product_img/bislary-500-ml.webp">
+              <img class="product-img" src="./image/product_img/bislary-500-ml.png" alt="bislary-500-ml">
+            </picture>
+            <p class="product-desc">Bisleri Water Bottle <br>500 ml</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/product_img/bislary-1-lit.webp">
+              <img class="product-img" src="./image/product_img/bislary-1-lit.png" alt="bislary-1-lit">
+            </picture>
+            <p class="product-desc">Bisleri Water Bottle <br>1 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          <div class="product-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/product_img/bislary-2-lit.webp">
+              <img class="product-img" src="./image/product_img/bislary-2-lit.png" alt="bislary-2-lit">
+            </picture>
+            <p class="product-desc">Bisleri Water Bottle <br>2 Litre</p>
+            <button class="enquire-button" type="button" onclick="scrollToSection('lead-form')">Enquire now</button>
+          </div>
+          
+        </div>
+        <!-- Additional Product Catalog Content Goes Here  -->
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <div class="About-us">
+          <picture>
+            <source type="image/webp" srcset="image/webp/about_us_image.webp">
+            <img src="image/about_us_image.jpg" alt="image" id="about-us-img">
+          </picture>
+          <p id="About-us-text">Welcome to <b>Online पानी वाला</b>, where hydration meets convenience at your fingertips! As the CEO, <b>Monika Arya</b> leads our dedicated team in delivering pure, refreshing water directly to your doorstep. Operating under the name "<b>Natural Drinking Water Supplier</b>," our commitment to quality and customer satisfaction ensures that every drop is of the highest standard, meeting both safety and taste expectations. Experience a seamless and refreshing water delivery service with us, your trusted source for pure and convenient water supply.</p>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2>Commonly asked questions</h2>
+        <div class="fab-data">
+          <div class="faq-container">
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleAnswer(this)">Q: How quickly can I expect my water delivery after placing an order?</div>
+              <div class="faq-answer"><b>A:</b> We strive for prompt service, and you can expect your water to be delivered within 30 minutes your order.</div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleAnswer(this)">Q: Are your prices inclusive of delivery charges?</div>
+              <div class="faq-answer"><b>A:</b> Yes, our unbeatable prices include all delivery charges, providing you with transparent and cost-effective solutions.</div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleAnswer(this)">Q: How do you ensure the quality of the water you deliver?</div>
+              <div class="faq-answer"><b>A:</b> We conduct daily TDS (Total Dissolved Solids) checks to maintain consistently high water quality, ensuring it meets the highest standards.</div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleAnswer(this)">Q: Do you offer water delivery services to both residential and corporate customers?</div>
+              <div class="faq-answer"><b>A:</b> Absolutely! We take pride in serving both residential and corporate clients, tailoring our services to meet diverse hydration needs.</div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleAnswer(this)">Q: Can I schedule recurring deliveries for my home or office?</div>
+              <div class="faq-answer"><b>A:</b> Yes, we offer the convenience of scheduled deliveries to ensure you never run out of water. Simply let us know your preferred frequency, and we'll handle the rest.</div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleAnswer(this)">Q: How can I be sure I'm getting the best deal on water delivery?</div>
+              <div class="faq-answer"><b>A:</b> Our commitment to providing the best value in the market means you can trust that you are receiving unbeatable prices and exceptional service.</div>
+            </div>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="image/webp/water_delivery.webp">
+            <img id="faq-container-img" src="image/water_delivery.jpg" alt="water delivery boy">
+          </picture>
+        </div>
+        <div id="faq-credit"><a href="https://www.freepik.com/free-vector/bottled-water-delivery-man-uniform-standing-near-cooler-service-worker-changing-water-cooler-jug_27669125.htm#query=water%20delivery&position=3&from_view=keyword&track=ais&uuid=14cad7fc-46ed-4692-9328-8203c9a49f24" target=”_blank” rel="noopener noreferrer">Image by studio4rt</a> on Freepik</div>
+
+        <!-- Additional FAQs Content Goes Here -->
+      </section>
+
+      <section id="usp">
+        <div class="usp-container">
+          <div class="usp-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/USP/USP1.webp">
+              <img class="usp-img" src="image/USP/USP1.png" alt="usp-imgage-1">
+            </picture>
+            <p class="usp-text">Same-day delivery for instant satisfaction</p>
+          </div>
+          <div class="usp-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/USP/USP2.webp">
+              <img class="usp-img" src="image/USP/USP2.png" alt="usp-imgage-2">
+            </picture>
+            <p class="usp-text">Best Market Prices, Unbeatable Value</p>
+          </div>
+          <div class="usp-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/USP/USP3.webp">
+              <img class="usp-img" src="image/USP/USP3.png" alt="usp-imgage-3">
+            </picture>
+            <p class="usp-text">Free doorstep Delivery</p>
+          </div>
+          <div class="usp-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/USP/USP4.webp">
+              <img class="usp-img" src="image/USP/USP4.png" alt="usp-imgage-4">
+            </picture>
+            <p class="usp-text">Daily TDS checks for high water quality</p>
+          </div>
+          <div class="usp-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/USP/USP5.webp">
+              <img class="usp-img" src="image/USP/USP5.png" alt="usp-imgage-5">
+            </picture>
+            <p class="usp-text">Monthly package available </p>
+          </div>
+          <div class="usp-item">
+            <picture>
+              <source type="image/webp" srcset="image/webp/USP/USP6.webp">
+              <img class="usp-img" src="image/USP/USP6.png" alt="usp-imgage-6">
+            </picture>
+            <p class="usp-text">Serving residential and corporate needs</p>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div id="embeded_video">
+          <!-- <iframe id="osmsis_video" src="https://drive.google.com/file/d/1asInAkmRPjVTAx_7jqVYZwhS7O77kEex/preview" allow="autoplay;"></iframe> -->
+          <iframe id="osmsis_video"  src="https://www.youtube.com/embed/AH10hKIDMXk?si=tvNU3yI7fmiN2OSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-description-item">
+            <p class="contact-description-text">Feel free to reach out to us for any inquiries or assistance. Our team at <b>Online पानी वाला</b> is dedicated to ensuring your satisfaction and addressing your water-related needs promptly. We look forward to hearing from you!</p>
+            <div class="contact-details">
+                <div class="ways-to-contact">
+                  <h6>Phone</h6>
+                  <p><a href="tel:8810232347">+91 8810232347</a></p>
+                </div>
+                <div class="ways-to-contact">
+                  <h6>Email</h6>
+                  <p><a href="mailto:naturaldwater@gmail.com">naturaldwater@gmail.com</a></p>
+                </div>
+                <div class="ways-to-contact">
+                  <h6>Delivery Timings</h6>
+                  <p>We offer seamless 24/7 water delivery</p>
+                </div>
+                <div class="ways-to-contact">
+                  <h6>Address</h6>
+                  <p>Golden nest B Block, Sector 62, Noida, Uttar Pradesh 201301</p>
+                </div>
+            </div>
+          </div>
+          <div id="lead-form">
+            <p id="form-title">Enquire Now</p>
+            <form id="enquire-form" action="submitForm.php" method="POST">
+                
+              <input id="fullname" name="fullname" type="text" placeholder="Full Name*" required>
+              <input id="phone" name="phone" type="text" placeholder="Phone Number*" required>
+              <span class="formerror"></span>
+
+                <input id="city" name="city" type="text" placeholder="City*" style="width: 90%;" required><br>
+                <span class="formerror"></span>
+
+                <textarea id="msg" name="msg" placeholder="Enter your message*" required></textarea>
+                
+                <input type="submit" value="Contact Us" id="form-button">
+            </form>
+          </div>
+          <div id="lead-form-submitted">
+            <p id="lead-form-thank-you" style="color: green;">Thank you!<br> We have received your response.<br>We will get back to you soon.</p>
+            <button id="closeButton" onclick="closeForm()">✕</button>
+          </div>
+        </div>
+    </main>
+
+    <footer>
+      <!-- Footer Content, Links, Copyright, etc. -->
+      <div class="sf">
+        <div class="row-1">
+          <div id="col-1">
+            <a onclick="scrollToSection('nav-bar');" href="javascript:void(0);">Online पानी वाला</a>
+            <p >Under CEO Monika Arya's leadership, Natural Drinking Water Supplier is dedicated to delivering the highest standard of pure, refreshing water directly to your doorstep, ensuring quality and customer satisfaction in every drop.</p>
+          </div>
+          <div id="col-2">
+            <p id="col-2-heading">Get In Touch</p>
+            <p id="col-2-text">
+              Address : Golden nest B Block, Sector 62, <br>
+              Noida, Uttar Pradesh 201301 <br>
+              <a href="https://maps.app.goo.gl/jDq3oTsFHdEz3KZs9" target="_blank" rel="noopener noreferrer"><em>Get Directions</em></a><br>
+              Email   :  naturaldwater@gmail.com <br>
+              Phone   : <a href="tel:+918810232347">+91 88102 32347</a> <br>
+            </p>
+          </div>
+          <div id="col-3">
+            <p> 
+              Reviews & feedback </br> 
+              <u><a href="https://g.page/r/CUFwmKt9ImPAEB0/review" target="_blank" rel="noopener noreferrer">Click Here</a></u><br><br>
+              For complaint reach us at:<br>
+              8826731465 Or <u><a href="https://forms.gle/Vv4TuZTbpxruKACFA" target="_blank" rel="noopener noreferrer">Click Here</a></u>
+            </p>
+          </div>
+        </div>
+        <div class="row-2">
+          <ul class="sf-list">
+            <li class="sf-list-items" onclick="scrollToSection('nav-bar');" href="javascript:void(0);">Home</li>
+            <li class="sf-list-items" onclick="scrollToSection('services');" href="javascript:void(0);">Our Services</li>
+            <li class="sf-list-items" onclick="scrollToSection('catalog');" href="javascript:void(0);">Product Catalog</li>
+            <li class="sf-list-items" onclick="scrollToSection('about');" href="javascript:void(0);">About Us </li>
+            <li class="sf-list-items" onclick="scrollToSection('faq');" href="javascript:void(0);">FAQs</li>
+            <li class="sf-list-items" onclick="scrollToSection('contact');" href="javascript:void(0);">Contact Us</li>
+          </ul>
+          <p>&copy; 2024 Natural Drinking Water Supplier. All rights reserved.</p>
+        </div>
+      </div>
+      <a href="https://wa.me/918810232347?text=Hello!%20%0AI'm%20exploring%20water%20delivery%20options.%20Could%20you%20share%20some%20details%20about%20your%20company%C2%A0and%C2%A0offerings%3F" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
