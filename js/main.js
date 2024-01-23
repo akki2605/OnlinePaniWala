@@ -21,28 +21,6 @@ function toggleAnswer(element) {
 }
 
 
-function formSubmit(url,data){
-  $.ajax({
-    url:url,
-    type:"POST",
-    contentType: false,
-    processData: false,
-    data: data,
-    success: function(resData){
-      if(resData !== undefined){
-        // Hide first view
-        $('#lead-form').hide();
-
-        // Show thank you message element with a delay and transition
-        var leadFormSubmitted = $('#lead-form-submitted');
-        leadFormSubmitted.css({ transition: 'opacity 1s', opacity: '1', display: 'block' });
-      }
-    },
-    error:function(error){
-      alert('Form not submitted, Please try again!!!');
-    }
-  })
-}
 
 $(document).ready(function () {
   $('#enquire-form').submit(function (e) {
@@ -67,15 +45,39 @@ $(document).ready(function () {
       $('.formerror:eq(1)').show();
       $('.formerror:eq(1)').text('*Please enter city correctly');
     } else {
-      var url = "https://docs.google.com/forms/d/e/1FAIpQLSfxLLS1TtOa1jYV96KfPe_btVMDFjjUcYgegLCEq8vtrXl6yw/formResponse?";
+      var emailSubmitUrl = "submitForm.php";
 
-      var form_data = new FormData();
-      form_data.append('entry.1763979098', fullname);
-      form_data.append('entry.1982011633', phone);
-      form_data.append('entry.164786112', city);
-      form_data.append('entry.2073022026', $('#msg').val());
+      // var form_data = new FormData();
+      var form_data = $(this).serialize();
+      
+      console.log(form_data)
+      $.ajax({
+        url: 'submitForm.php',
+        type: "post",
+        dataType: "json",
+        data: form_data,
+        success: function (emailResData) {
+          console.log(emailResData)
 
-      formSubmit(url, form_data);
+          if (emailResData.status === 'success') {
+            // Hide first view
+            $('#lead-form').hide();
+      
+            // Show thank you message element with a delay and transition
+            var leadFormSubmitted = $('#lead-form-submitted');
+            leadFormSubmitted.css({ transition: 'opacity 1s', opacity: '1', display: 'block' });
+          } else {
+            // Handle email submission error if needed
+            console.error('Error submitting email form: error');
+          }
+        },
+        error: function (emailError) {
+          // Handle email submission error if needed
+          alert("failed!!!!")
+          console.error(emailError.responseText);
+        }
+      });
+      // formSubmit(url, form_data);
     }
   });
 });

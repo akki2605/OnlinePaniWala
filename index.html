@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" alt="Favicon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <title>Online पानी वाला</title>
@@ -40,6 +45,8 @@
           <p id="tag-line">Hydration Redefined: Delivering Pure<br>Refreshment to Your Doorstep.</p>       
           <a href="tel:8810232347"><button id="order-on-call-button">ORDER ON CALL</button></a>
           <a href="https://wa.me/918810232347?text=Hello!%20%0AI'm%20exploring%20water%20delivery%20options.%20Could%20you%20share%20some%20details%20about%20your%20company%C2%A0and%C2%A0offerings%3F" target="_blank" rel="noopener noreferrer"><button id="order-on-whatsapp-button">ORDER ON WHATSAPP</button></a>
+          <div id="g-profile"><a href="https://g.co/kgs/MKHAVYZ" target="_blank">Google Profile</a></div>
+
         </div>
         <p id="text-currently-serving">Currently serving noida only!!!</p>
       </section>
@@ -161,7 +168,7 @@
           
             <div class="faq-item">
               <div class="faq-question" onclick="toggleAnswer(this)">Q: How do you ensure the quality of the water you deliver?</div>
-              <div class="faq-answer"><b><b>A:</b></b> We conduct daily TDS (Total Dissolved Solids) checks to maintain consistently high water quality, ensuring it meets the highest standards.</div>
+              <div class="faq-answer"><b>A:</b> We conduct daily TDS (Total Dissolved Solids) checks to maintain consistently high water quality, ensuring it meets the highest standards.</div>
             </div>
           
             <div class="faq-item">
@@ -238,7 +245,8 @@
       
       <section>
         <div id="embeded_video">
-          <iframe id="osmsis_video" src="https://drive.google.com/file/d/1asInAkmRPjVTAx_7jqVYZwhS7O77kEex/preview" allow="autoplay;"></iframe>
+          <!-- <iframe id="osmsis_video" src="https://drive.google.com/file/d/1asInAkmRPjVTAx_7jqVYZwhS7O77kEex/preview" allow="autoplay;"></iframe> -->
+          <iframe id="osmsis_video"  src="https://www.youtube.com/embed/AH10hKIDMXk?si=tvNU3yI7fmiN2OSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
         </div>
       </section>
       
@@ -268,7 +276,7 @@
           </div>
           <div id="lead-form">
             <p id="form-title">Enquire Now</p>
-            <form id="enquire-form" action=" " method="post">
+            <form id="enquire-form" action="submitForm.php" method="POST">
                 
               <input id="fullname" name="fullname" type="text" placeholder="Full Name*" required>
               <input id="phone" name="phone" type="text" placeholder="Phone Number*" required>
@@ -328,6 +336,9 @@
           <p>&copy; 2024 Natural Drinking Water Supplier. All rights reserved.</p>
         </div>
       </div>
+      <a href="https://wa.me/918810232347?text=Hello!%20%0AI'm%20exploring%20water%20delivery%20options.%20Could%20you%20share%20some%20details%20about%20your%20company%C2%A0and%C2%A0offerings%3F" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
     </footer>
 
     <script src="js/main.js"></script>
