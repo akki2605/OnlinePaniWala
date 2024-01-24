@@ -146,9 +146,9 @@ h2{
 }
 
 #g-profile {
-  position: fixed;
+  position: absolute;
+  right: -44px;
   top: 20%;
-  right: -72px; /* Adjust the value to ensure the element is off-screen */
   z-index: 9;
   width: 120px;
   height: 27px;
@@ -164,10 +164,6 @@ h2{
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   transition: right 0.3s ease; /* Add a transition effect for the right property */
-}
-
-#g-profile:hover {
-  right: -50px; /* Move the element into view on hover */
 }
 
 #tag-line{
